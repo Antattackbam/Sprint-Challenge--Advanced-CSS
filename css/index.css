@@ -272,6 +272,19 @@ footer {
     margin: 0 auto;
   }
 }
+.home .walk .magform {
+  width: 600px;
+}
+@media (max-width: 500px) {
+  .home .walk .magform {
+    width: 100%;
+  }
+}
+.home .walk .formtitle p {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -292,7 +305,7 @@ footer {
   font-size: 1.7rem;
   border-radius: 5px;
   text-align: center;
-  padding: 5px;
+  padding: 2px;
   color: white;
   width: 110px;
   cursor: pointer;
