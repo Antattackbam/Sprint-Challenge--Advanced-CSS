@@ -1,3 +1,17 @@
+@keyframes bluetitle {
+  20% {
+    color: #0f6bd3;
+  }
+  50% {
+    color: #23293B;
+  }
+  75% {
+    color: #5c1c1c;
+  }
+  100% {
+    color: black;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,11 +179,20 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.95;
   border-bottom: 1px dashed lightgray;
 }
 nav h1 {
   font-size: 4rem;
   margin-bottom: 15px;
+  animation-name: bluetitle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 nav a {
   text-decoration: none;
@@ -186,6 +209,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 90px;
 }
 .home .intro h2 {
   padding: 15px;
