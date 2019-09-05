@@ -1,1 +1,47 @@
 // Mixins Here
+.navstyle(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    opacity: .95;
+    border-bottom: 1px dashed lightgray;
+}
+
+.animatetitle(){
+    animation-name: bluetitle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bluetitle{
+    20%{color: @titleblue;}
+    50%{color: @ebony-clay;}
+    75%{color: @titlered;}
+    100%{color: black;}
+    
+}
+
+.linkstyle(){
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    color: black;
+}
+
+.btnstyle(@width, @height, @padding){
+    background-color: @btn-bg-color;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: @padding;
+    color: white;
+    width: @width;
+    cursor: pointer;
+    height: @height;
+}
